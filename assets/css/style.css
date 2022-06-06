@@ -215,19 +215,19 @@ features area
 	width: 30%;
 }
 
-#features .box-one{background: background: rgba(120, 137, 37, 0.7); top: 20%; left: 17%;}
+#features .box-one{background: rgba(120, 137, 37, 0.7); top: 20%; left: 17%;}
 #features .box-two{background: darkred; top: 20%; left: 25%;}
 #features .box-three{background: seagreen; top: 40%; left: 5%;}
 #features .box-four{background: teal; top: 40%; left: 35%;}
 #features .box-five{background: darkgreen; top: 60%; left: 17%;}
 #features .box-six{background: midnightblue; top: 60%; left: 25%;}
 
-#features .box-one{animation: box-one 15s ease-in-out 2s alternate infinite;}
-#features .box-two{animation: box-two 15s ease-in-out 2s alternate infinite;}
-#features .box-three{animation: box-three 15s ease-in-out alternate infinite;}
-#features .box-four{animation: box-four 15s ease-in-out alternate infinite;}
-#features .box-five{animation: box-five 15s ease-in-out 3.6s alternate infinite;}
-#features .box-six{animation: box-six 15s ease-in-out 3.6s alternate infinite;}
+#features .box-one{animation: box-one 10s ease-in-out 2s alternate infinite;}
+#features .box-two{animation: box-two 10s ease-in-out 2s alternate infinite;}
+#features .box-three{animation: box-three 10s ease-in-out alternate infinite;}
+#features .box-four{animation: box-four 10s ease-in-out alternate infinite;}
+#features .box-five{animation: box-five 10s ease-in-out 3.6s alternate infinite;}
+#features .box-six{animation: box-six 10s ease-in-out 3.6s alternate infinite;}
 
 @keyframes box-one{
 	0%{
