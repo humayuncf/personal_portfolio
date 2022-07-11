@@ -1,18 +1,22 @@
-/******************large screen******************/
+/****************** xxl screen ******************/
 @media only screen and (min-width: 1400px) {
 	.experience .counter h1{
 		padding: 27px 0px;
 		font-size: 2rem;
 	}
 }
-@media (min-width: 768px) and (max-width: 1199px){
-	.img-padding{padding-left: 9% !important;}
-}
+
+/****************** xl screen ******************/
 @media screen and (min-width: 1200px) {
-	.img-padding{ padding-left: 12% !important;}
+	.about .img-padding{ padding-left: 12% !important;}
 }
 
-/*****************small screen*******************/
+/****************** large screen ******************/
+@media (min-width: 768px) and (max-width: 1199px){
+	.about .img-padding{padding-left: 9% !important;}
+}
+
+/***************** small screen *******************/
 @media screen and (max-width: 767px){
 	.#myNav li a:hover{
 		transform: none;
@@ -35,25 +39,33 @@
 	:root{
 		--time: 3s;
 
-		--div0top: -140px;
+		--col: yellow;
+
+		--textsize: 40px;
+
+		--div0top: -240px;
 		--div100top: 10px;
 
 		--textbase: 40px;
 		--text25top: 10px;
 		--texttop: 70px;
 
-		--left0: 35px;
-		--left25: 42px;
-		--left50: 49px;
-		--left75: 56px;
-		--left100: 63px;
-
 		--text2base: 110px;
 		--text2top25: 80px;
 		--text2top: 140px;
 
-		--left-2-50: 13px;
-		--left-2-100: 26px;
+		--textleft0: 35px;
+		--textleft25: 42px;
+		--textleft50: 49px;
+		--textleft75: 56px;
+		--textleft100: 63px;
+
+		--text2left0: 0px;
+		--text2left25: 2px;
+		--text2left50: 4px;
+		--text2left75: 6px;
+		--text2left100: 8px;
+
 	}
 	/*.ani-child{
 		position: absolute;
@@ -70,493 +82,103 @@
 			top: 40px;
 		}
 	}*/
-	.dw, .de, .db, .dd1, .dd, .de2, .ds, .di, .dg, .dn, .de3, .dr p{
-	    font-weight: bolder;
-	    font-size: 40px;
-	    color: yellow;
-	    text-shadow: 10px 10px 10px darkorange;
-	}
-	.dw, .de, .db, .dd1, .dd, .de2, .ds, .di, .dg, .dn, .de3, .dr{
-	    position: absolute;
-	    top: var(--div100top);
-	}
-	.dw{
-	    animation: dw .7s linear 1;
-	}
-	.de{
-	    animation: de .8s linear 1;
-	}
-	.db{
-	    animation: db .9s linear 1;
-	}
-	.dd1{
-	    animation: dd1 .95s linear 1;
-	}
-	.dd{
-	    animation: dd 1s linear 1;
-	}
-	.de2{
-	    animation: de2 1.1s linear 1;
-	}
-	.ds{
-	    animation: ds 1.2s linear 1;
-	}
-	.di{
-	    animation: di 1.3s linear 1;
-	}
-	.dg{
-	    animation: dg 1.4s linear 1;
-	}
-	.dn{
-	    animation: dn 1.5s linear 1;
-	}
-	.de3{
-	    animation: de3 1.6s linear 1;
-	}
-	.dr{
-	    animation: dr 1.7s linear 1;
-	}
 	.w, .e, .b {
-	    position: absolute;
-	    top: var(--textbase);
 	    left: 35px;
 	}
 	.d1, .d, .e2, .s, .i, .g, .n, .e3, .r{
-		position: absolute;
 	    top: var(--text2base);
-	    left: 0px;
 	}
-	.w{
-	    animation: w var(--time) linear .8s alternate infinite;
-	}
-	.e{
-	    animation: e var(--time) linear .9s alternate infinite;
-	}
-	.b{
-	    animation: b var(--time) linear 1s alternate infinite;
-	}
-	.d1{
-	    animation: d1 var(--time) linear 1.05s alternate infinite;
-	}
-	.d{
-	    animation: d var(--time) linear 1.1s alternate infinite;
-	}
-	.e2{
-	    animation: e2 var(--time) linear 1.2s alternate infinite;
-	}
-	.s{
-	    animation: s var(--time) linear 1.3s alternate infinite;
-	}
-	.i{
-	    animation: i var(--time) linear 1.4s alternate infinite;
-	}
-	.g{
-	    animation: g var(--time) linear 1.5s alternate infinite;
-	}
-	.n{
-	    animation: n var(--time) linear 1.6s alternate infinite;
-	}
-	.e3{
-	    animation: e3 var(--time) linear 1.7s alternate infinite;
-	}
-	.r{
-	    animation: r var(--time) linear 1.8s alternate infinite;
+}
+
+/***************** x small screen*****************/
+@media screen and (max-width: 555px){
+	#features [class*='box-']{
+		left: 0!important;
+		margin: 0 auto!important;
+		margin-bottom: 15px !important;
 	}
 
-	@keyframes dw{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
+	:root{
+		--boxwidth: 60% !important;
+
+		--box1left1: 0% !important;
+		--box1left2: 0% !important;
+
+		--box2left1: 0% !important;
+		--box2left2: 0% !important;
+
+		--box3left1: 0% !important;
+		--box3left2: 0% !important;
+
+		--box4left1: 0% !important;
+		--box4left2: 0% !important;
 	}
-	@keyframes w{
-	    0%{
-	        top: var(--textbase);
-	        left: var(--left0);
-	    }
-	    25%{
-	    	top: var(--text25top);
-	        left: var(--left25);
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--textbase);
-	        left: var(--left50);
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--texttop);
-	    	left: var(--left75);
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--textbase);
-	        left: var(--left100);
-	    }
+}
+
+/***************** x small screen*****************/
+@media screen and (max-width: 480px){
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+		top: 63% !important;
 	}
-	@keyframes de{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
+	.project .work-inner .work-content .icon{
+		font-size: 50px !important;
+}
+
+@media (min-width: 416px) and (max-width: 470px){
+	.project .work-content .title-wrapper{
+		padding-top: 8px !important;
 	}
-	@keyframes e{
-	    0%{
-	        top: var(--textbase);
-	        left: var(--left0);
-	    }
-	    25%{
-	    	top: var(--text25top);
-	        left: var(--left25);
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--textbase);
-	        left: var(--left50);
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--texttop);
-	    	left: var(--left75);
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--textbase);
-	        left: var(--left100);
-	    }
+}
+
+/***************** x small screen*****************/
+@media screen and (max-width: 415px){
+	.project .work-content h5{
+		font-size: 16px !important;
 	}
-	@keyframes db{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
+	.project .work-content p{
+		font-size: 13px !important;
 	}
-	@keyframes b{
-	    0%{
-	        top: var(--textbase);
-	        left: var(--left0);
-	    }
-	    25%{
-	    	top: var(--text25top);
-	        left: var(--left25);
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--textbase);
-	        left: var(--left50);
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--texttop);
-	    	left: var(--left75);
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--textbase);
-	        left: var(--left100);
-	    }
+	.project .work-inner .work-content .icon{
+		font-size: 35px !important;
 	}
-	@keyframes dd1{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
+	.project .work-content .title-wrapper{
+		padding-top: 17px !important;
 	}
-	@keyframes d1{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
+}
+
+/***************** x small screen*****************/
+@media screen and (max-width: 375px){
+	.project .work-content .title-wrapper{
+		padding-top: 17px !important;
 	}
-	@keyframes dd{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
+	.project .work-content .title-wrapper h5{
+		margin-top: 0 !important;
+		padding-top: 0 !important;
 	}
-	@keyframes d{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
+}
+
+/***************** x small screen*****************/
+@media screen and (max-width: 350px){
+	:root{
+		--text2left0: 0px;
+		--text2left25: 0px;
+		--text2left50: 0px;
+		--text2left75: 0px;
+		--text2left100: 0px;
 	}
-	@keyframes de2{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
+	.carousel-control-prev-icon, .carousel-control-next-icon{
+		top: 55% !important;
 	}
-	@keyframes e2{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
+	.experience .counter{
+		height: 100px !important;
+		width: 100px !important;
+		padding-top: 5px!important;
 	}
-	@keyframes ds{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
+	.project .work-inner .work-content .icon{
+		font-size: 45px !important;
 	}
-	@keyframes s{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
-	}
-	@keyframes di{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
-	}
-	@keyframes i{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
-	}
-	@keyframes dg{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
-	}
-	@keyframes g{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
-	}
-	@keyframes dn{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
-	}
-	@keyframes n{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
-	}
-	@keyframes de3{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
-	}
-	@keyframes e3{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
-	}
-	@keyframes dr{
-	    0%{
-	        top: var(--div0top);
-	    }
-	    100%{
-	        top: var(--div100top);
-	    }
-	}
-	@keyframes r{
-	    0%{
-	        top: var(--text2base);
-	        left: 0px;
-	    }
-	    25%{
-	    	top: var(--text2top25);
-	        left: 4px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    50%{
-	        top: var(--text2base);
-	        left: 8px;
-	        transform: rotate3d(0, 1, 0, 90deg);
-	    }
-	    75%{
-	    	top: var(--text2top);
-	    	left: 12px;
-	        transform: rotate3d(0, 1, 0, 45deg);
-	    }
-	    100%{
-	        top: var(--text2base);
-	        left: 16px;
-	    }
+	.project .work-content .title-wrapper{
+		/*margin-top: 5px !important;*/
+		padding-top: 10px !important;
 	}
 }

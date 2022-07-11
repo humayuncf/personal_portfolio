@@ -215,7 +215,8 @@ features area
 	position: relative;
 	color: white;
 	height: auto;
-	width: 30%;
+	width: var(--boxwidth);
+	word-wrap: break-word;
 }
 
 #features .box-one{background: rgba(120, 137, 37, 0.7); top: 20%; left: 17%;}
@@ -232,154 +233,170 @@ features area
 #features .box-five{animation: box-five 10s ease-in-out 3.6s alternate infinite;}
 #features .box-six{animation: box-six 10s ease-in-out 3.6s alternate infinite;}
 
+:root{
+	--boxwidth: 30%;
+
+	--box1left1: 17%;
+	--box1left2: 55%;
+
+	--box2left1: 25%;
+	--box2left2: -13%;
+
+	--box3left1: 5%;
+	--box3left2: 65%;
+
+	--box4left1: 35%;
+	--box4left2: -25%;
+}
+
 @keyframes box-one{
 	0%{
-		left: 17%;
+		left: var(--box1left1);
 		background: rgba(120, 137, 37, 0.7);
 	}
 	49%{
 		background: transparent;
 		color: transparent;
-		left: 17%;
+		left: var(--box1left1);
 	}
 	51%{
 		background: transparent;
 		color: transparent;
-		left: 55%;
+		left: var(--box1left2);
 	}
 	55%{
 		background: transparent;
 		color: transparent;
-		left: 55%;
+		left: var(--box1left2);
 	}
 	100%{
 		background: var(--coldark);
-		left: 55%;
+		left: var(--box1left2);
 	}
 }
 @keyframes box-two{
 	0%{
-		left: 25%;
+		left: var(--box2left1);
 		background: darkred;
 	}
 	49%{
-		left: 25%;
+		left: var(--box2left1);
 		background: transparent;
 		color: transparent;
 	}
 	51%{
-		left: -13%;
+		left: var(--box2left2);
 		background: transparent;
 		color: transparent;
 	}
 	53%{
-		left: -13%;
+		left: var(--box2left2);
 		background: transparent;
 		color: transparent;
 	}
 	100%{
 		background: darkolivegreen;
-		left: -13%;
+		left: var(--box2left2);
 	}
 }
 @keyframes box-three{
 	0%{
 		background: seagreen;
-		left: 5%;
+		left: var(--box3left1);
 	}
 	49%{
 		background: transparent;
 		color: transparent;
-		left: 5%;
+		left: var(--box3left1);
 	}
 	51%{
 		background: transparent;
 		color: transparent;
-		left: 65%;
+		left: var(--box3left2);
 	}
 	55%{
 		background: transparent;
 		color: transparent;
-		left: 65%;
+		left: var(--box3left2);
 	}
 	100%{
 		background: lightslategray;
-		left: 65%;
+		left: var(--box3left2);
 	}
 }
 @keyframes box-four{
 	0%{
-		left: 35%;
+		left: var(--box4left1);
 		background: teal;
 	}
 	49%{
-		left: 35%;
+		left: var(--box4left1);
 		background: transparent;
 		color: transparent;
 	}
 	51%{
-		left: -25%;
+		left: var(--box4left2);
 		background: transparent;
 		color: transparent;
 	}
 	53%{
-		left: -25%;
+		left: var(--box4left2);
 		background: transparent;
 		color: transparent;
 	}
 	100%{
 		background: peru;
-		left: -25%;
+		left: var(--box4left2);
 	}
 }
 @keyframes box-five{
 	0%{
-		left: 17%;
+		left: var(--box1left1);
 		background: darkgreen;
 	}
 	49%{
 		background: transparent;
 		color: transparent;
-		left: 17%;
+		left: var(--box1left1);
 	}
 	51%{
 		background: transparent;
 		color: transparent;
-		left: 55%;
+		left: var(--box1left2);
 	}
 	55%{
 		background: transparent;
 		color: transparent;
-		left: 55%;
+		left: var(--box1left2);
 	}
 	100%{
 		background: goldenrod;
-		left: 55%;
+		left: var(--box1left2);
 	}
 }
 @keyframes box-six{
 	0%{
-		left: 25%;
+		left: var(--box2left1);
 		background: midnightblue;
 	}
 	49%{
-		left: 25%;
+		left: var(--box2left1);
 		background: transparent;
 		color: transparent;
 	}
 	51%{
-		left: -13%;
+		left: var(--box2left2);
 		background: transparent;
 		color: transparent;
 	}
 	53%{
-		left: -13%;
+		left: var(--box2left2);
 		background: transparent;
 		color: transparent;
 	}
 	100%{
 		background: darkslategray;
-		left: -13%;
+		left: var(--box2left2);
 	}
 }
 /**************************
