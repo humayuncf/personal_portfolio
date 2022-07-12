@@ -5,7 +5,7 @@
 
     --textsize: 50px;
 
-	--div0top: -180px;
+	--div0top: -200px;
 	--div100top: 85px;
 
 	--textbase: 0px;
@@ -61,40 +61,40 @@
     top: var(--div100top);
 }
 .dw{
-    animation: dw .7s linear 1;
+    animation: dw .7s linear .08s 1;
 }
 .de{
-    animation: de .8s linear 1;
+    animation: de .8s linear .1s 1;
 }
 .db{
-    animation: db .9s linear 1;
+    animation: db .9s linear .2s 1;
 }
 .dd1{
-    animation: dd1 .95s linear 1;
+    animation: dd1 .95s linear .3s 1;
 }
 .dd{
-    animation: dd 1s linear 1;
+    animation: dd 1s linear .3s 1;
 }
 .de2{
-    animation: de2 1.1s linear 1;
+    animation: de2 1.1s linear .3s 1;
 }
 .ds{
-    animation: ds 1.2s linear 1;
+    animation: ds 1.2s linear .3s 1;
 }
 .di{
-    animation: di 1.3s linear 1;
+    animation: di 1.3s linear .3s 1;
 }
 .dg{
-    animation: dg 1.4s linear 1;
+    animation: dg 1.4s linear .3s 1;
 }
 .dn{
-    animation: dn 1.5s linear 1;
+    animation: dn 1.5s linear .3s 1;
 }
 .de3{
-    animation: de3 1.6s linear 1;
+    animation: de3 1.6s linear .3s 1;
 }
 .dr{
-    animation: dr 1.7s linear 1;
+    animation: dr 1.7s linear .3s 1;
 }
 .w, .e, .b, .d1, .d, .e2, .s, .i, .g, .n, .e3, .r{
     position: absolute;
